@@ -492,11 +492,13 @@
           // generate quiz 
           $('#quiz span').each(function(){
               // get the random number  -- try it with me
+              var num = gen();
+              $(this).text(num);
 
           });
 
           // hide the next button --- try it with me. 
-          
+          $('#quiz input[type="button"]').hide();
           // check answer
           $('#quiz input[type="text"]').blur(function(){
               var $A = $(this).prev();
